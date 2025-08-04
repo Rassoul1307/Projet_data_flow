@@ -15,3 +15,19 @@ pymysql==1.1.0
 
 # Python-dotenv : pour lire les variables d'environnement (optionnel)
 python-dotenv==1.0.0
+
+# === DÉPENDANCES POUR LE SCRAPING MÉTÉO ===
+# Selenium : automatisation du navigateur web
+selenium==4.15.2
+
+# BeautifulSoup : parsing HTML
+beautifulsoup4==4.12.2
+
+# WebDriver Manager : gestion automatique du driver Chrome
+webdriver-manager==4.0.1
+
+# lxml : parser XML/HTML (utilisé par BeautifulSoup)
+lxml==4.9.3
+
+# Requests : requêtes HTTP (dépendance de webdriver-manager)
+requests==2.31.0
