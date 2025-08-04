@@ -1,10 +1,7 @@
-from faker import Faker
 import random
 from datetime import datetime, timedelta
 import json
 
-
-fake = Faker()
 
 def generate_weather_data(start_date, num_days):
     weather_data = []
