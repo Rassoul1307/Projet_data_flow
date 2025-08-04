@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:14.1-alpine
+    container_name: postgres_meteo
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: azoupro
+      POSTGRES_DB: meteo_dakar
+    ports:
+      - "5433:5432"  # ← Change ici : ton hôte écoute sur 5433, le conteneur reste en 5432
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql+psycopg2://postgres:azoupro@db:5432/meteo_dakar
+
+volumes:
+  db_data:
