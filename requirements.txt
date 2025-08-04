@@ -1,0 +1,17 @@
+# NumPy : version compatible (IMPORTANT: installer en premier)
+numpy==1.24.3
+
+# Pandas : pour lire et manipuler les fichiers CSV (version compatible)
+pandas==2.0.3
+
+# MySQL connector : pour se connecter à MySQL depuis Python
+mysql-connector-python==8.1.0
+
+# SQLAlchemy : ORM Python pour faciliter les requêtes SQL
+sqlalchemy==2.0.19
+
+# PyMySQL : driver MySQL alternatif (au cas où)
+pymysql==1.1.0
+
+# Python-dotenv : pour lire les variables d'environnement (optionnel)
+python-dotenv==1.0.0
