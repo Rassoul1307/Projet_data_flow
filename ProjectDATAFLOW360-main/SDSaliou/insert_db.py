@@ -1,9 +1,10 @@
 import json
 import uuid
 from cassandra.cluster import Cluster
+from cassandra.query import SimpleStatement
 
 #connexion à Cassandra
-cluster = Cluster(['127.0.0.1'])
+cluster = Cluster(['cassandra'])
 session = cluster.connect()
 
 #Créer le keyspace
