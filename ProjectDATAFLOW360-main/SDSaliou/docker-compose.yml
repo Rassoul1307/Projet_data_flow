@@ -1,0 +1,28 @@
+services:
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra
+    ports:
+      - "9042:9042"  # Port CQL
+    environment:
+      CASSANDRA_CLUSTER_NAME: 'scraper_cluster'
+      CASSANDRA_DC: 'datacenter1'
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+    networks:
+      - mynetwork
+
+  data_inserter:
+    build: .
+    container_name: inserter
+    depends_on:
+      - cassandra
+    networks:
+      - mynetwork
+
+volumes:
+  cassandra_data:
+
+networks:
+  mynetwork:
