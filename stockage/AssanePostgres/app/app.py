@@ -2,6 +2,7 @@ import pandas as pd
 from sqlalchemy import create_engine, MetaData, Table, Column, String, DateTime, Numeric, insert
 import os
 
+
 # Connexion PostgreSQL via variable d'environnement
 db_url = os.environ.get("DATABASE_URL")
 engine = create_engine(db_url)
@@ -31,7 +32,7 @@ donnees = df.to_dict(orient="records")
 
 # Étape 4 : Insertion des données
 with engine.connect() as conn:
-    existants = pd.read_sql("SELECT Date_time, Region FROM metheo_dakar", conn)
+    existants = pd.read_sql('SELECT "Date_time", "Region" FROM metheo_dakar', conn)
 
 # Suppression des doublons dans le DataFrame
 df_new = df.merge(existants, on=["Date_time", "Region"], how="left", indicator=True)
