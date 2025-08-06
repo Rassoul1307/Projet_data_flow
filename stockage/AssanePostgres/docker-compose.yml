@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: azoupro
       POSTGRES_DB: meteo_dakar
     ports:
-      - "5433:5432"  # ← Change ici : ton hôte écoute sur 5433, le conteneur reste en 5432
+      - "5433:5432" # ← Change ici : ton hôte écoute sur 5433, le conteneur reste en 5432
     volumes:
       - db_data:/var/lib/postgresql/data
 
@@ -22,3 +22,8 @@ services:
 
 volumes:
   db_data:
+
+networks:
+  default:
+    name: data-lake-network
+    external: true

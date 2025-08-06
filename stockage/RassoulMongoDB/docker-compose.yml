@@ -23,10 +23,14 @@ services:
       MONGO_PASSWORD: passer123
     volumes:
       - ../../data:/app/data
-    networks:
-      - default
+
 volumes:
   mongo-data:
     driver: local
   mongo-config:
     driver: local
+
+networks:
+  default:
+    name: data-lake-network
+    external: true

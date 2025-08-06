@@ -24,6 +24,8 @@ metheo_dakar = Table(
 # Étape 1 : Création de la table dans la base si elle n'existe pas
 metadata.create_all(engine)
 
+print("DATABASE_URL =", db_url)
+
 # Étape 2 : Lecture du CSV avec conversion automatique de Date_time en datetime
 df = pd.read_csv("meteo_dakar_1000.csv", parse_dates=["Date_time"])
 
