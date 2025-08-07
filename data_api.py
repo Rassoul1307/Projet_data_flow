@@ -2,14 +2,14 @@ import requests
 import json
 from datetime import datetime
 
-# Clé API Tomorrow.io
+# 
 TOMORROW_API_KEY = "OC9yH405dZFT1BOO6w6nPgDanrhpPwV8"
 
-# Coordonnées pour Dakar
+# les Coordonnées (latitude et longitude ) de Dakar
 lat, lon = 14.693425, -17.447938
 location = f"{lat},{lon}"
 
-# Préparation de la requête POST
+# 
 url = f"https://api.tomorrow.io/v4/timelines?apikey={TOMORROW_API_KEY}"
 
 payload = {
@@ -48,11 +48,11 @@ try:
         }
         results.append(weather_info)
 
-    # Affichage
+    # Affichage des paramétre météo
     for entry in results:
         print(f"{entry['datetime']} ➤ Température : {entry['temperature']}°C")
 
-    # Enregistrement dans un fichier JSON
+    # Enregistrement dans El_malick_meteo_dakar.json
     with open("./data/api/El_malick_meteo_dakar.json", "a", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 

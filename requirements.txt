@@ -1,0 +1,3 @@
+redis==5.0.4
+requests==2.31.0
+kafka-python==2.2.3

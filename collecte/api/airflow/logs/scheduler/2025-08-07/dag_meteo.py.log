@@ -1,0 +1,210 @@
+[2025-08-07 07:45:44,462] {processor.py:153} INFO - Started process (PID=27736) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:45:44,462] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:45:44,463] {logging_mixin.py:115} INFO - [2025-08-07 07:45:44,463] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:45:44,476] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:45:44,560] {logging_mixin.py:115} INFO - [2025-08-07 07:45:44,559] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:45:44,643] {logging_mixin.py:115} INFO - [2025-08-07 07:45:44,643] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:45:44.642423+00:00, run_after=2025-08-07T07:45:44.642423+00:00
+[2025-08-07 07:45:44,677] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.223 seconds
+[2025-08-07 07:46:14,775] {processor.py:153} INFO - Started process (PID=27743) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:46:14,776] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:46:14,776] {logging_mixin.py:115} INFO - [2025-08-07 07:46:14,776] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:46:14,783] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:46:14,814] {logging_mixin.py:115} INFO - [2025-08-07 07:46:14,814] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:46:14,835] {logging_mixin.py:115} INFO - [2025-08-07 07:46:14,835] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:46:14.834999+00:00, run_after=2025-08-07T07:46:14.834999+00:00
+[2025-08-07 07:46:14,849] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.077 seconds
+[2025-08-07 07:46:44,935] {processor.py:153} INFO - Started process (PID=27748) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:46:44,936] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:46:44,936] {logging_mixin.py:115} INFO - [2025-08-07 07:46:44,936] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:46:44,945] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:46:44,981] {logging_mixin.py:115} INFO - [2025-08-07 07:46:44,981] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:46:45,007] {logging_mixin.py:115} INFO - [2025-08-07 07:46:45,007] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:46:45.006977+00:00, run_after=2025-08-07T07:46:45.006977+00:00
+[2025-08-07 07:46:45,025] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.094 seconds
+[2025-08-07 07:47:15,105] {processor.py:153} INFO - Started process (PID=27753) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:47:15,106] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:47:15,106] {logging_mixin.py:115} INFO - [2025-08-07 07:47:15,106] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:47:15,113] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:47:15,150] {logging_mixin.py:115} INFO - [2025-08-07 07:47:15,150] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:47:15,176] {logging_mixin.py:115} INFO - [2025-08-07 07:47:15,175] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:47:15.175622+00:00, run_after=2025-08-07T07:47:15.175622+00:00
+[2025-08-07 07:47:15,194] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.093 seconds
+[2025-08-07 07:47:45,278] {processor.py:153} INFO - Started process (PID=27758) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:47:45,279] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:47:45,280] {logging_mixin.py:115} INFO - [2025-08-07 07:47:45,280] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:47:45,289] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:47:45,323] {logging_mixin.py:115} INFO - [2025-08-07 07:47:45,323] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:47:45,345] {logging_mixin.py:115} INFO - [2025-08-07 07:47:45,345] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:47:45.345540+00:00, run_after=2025-08-07T07:47:45.345540+00:00
+[2025-08-07 07:47:45,360] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.086 seconds
+[2025-08-07 07:48:15,445] {processor.py:153} INFO - Started process (PID=27763) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:48:15,447] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:48:15,448] {logging_mixin.py:115} INFO - [2025-08-07 07:48:15,448] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:48:15,456] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:48:15,491] {logging_mixin.py:115} INFO - [2025-08-07 07:48:15,491] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:48:15,513] {logging_mixin.py:115} INFO - [2025-08-07 07:48:15,513] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:48:15.512911+00:00, run_after=2025-08-07T07:48:15.512911+00:00
+[2025-08-07 07:48:15,529] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.088 seconds
+[2025-08-07 07:48:45,615] {processor.py:153} INFO - Started process (PID=27768) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:48:45,616] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:48:45,617] {logging_mixin.py:115} INFO - [2025-08-07 07:48:45,616] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:48:45,627] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:48:45,664] {logging_mixin.py:115} INFO - [2025-08-07 07:48:45,664] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:48:45,686] {logging_mixin.py:115} INFO - [2025-08-07 07:48:45,686] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:48:45.686397+00:00, run_after=2025-08-07T07:48:45.686397+00:00
+[2025-08-07 07:48:45,701] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.091 seconds
+[2025-08-07 07:49:15,787] {processor.py:153} INFO - Started process (PID=27773) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:49:15,789] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:49:15,789] {logging_mixin.py:115} INFO - [2025-08-07 07:49:15,789] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:49:15,797] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:49:15,828] {logging_mixin.py:115} INFO - [2025-08-07 07:49:15,828] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:49:15,849] {logging_mixin.py:115} INFO - [2025-08-07 07:49:15,849] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:49:15.849549+00:00, run_after=2025-08-07T07:49:15.849549+00:00
+[2025-08-07 07:49:15,864] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.081 seconds
+[2025-08-07 07:49:45,950] {processor.py:153} INFO - Started process (PID=27778) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:49:45,950] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:49:45,951] {logging_mixin.py:115} INFO - [2025-08-07 07:49:45,951] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:49:45,958] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:49:45,990] {logging_mixin.py:115} INFO - [2025-08-07 07:49:45,989] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:49:46,012] {logging_mixin.py:115} INFO - [2025-08-07 07:49:46,011] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:49:46.011684+00:00, run_after=2025-08-07T07:49:46.011684+00:00
+[2025-08-07 07:49:46,028] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.083 seconds
+[2025-08-07 07:50:16,108] {processor.py:153} INFO - Started process (PID=27783) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:50:16,110] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:50:16,110] {logging_mixin.py:115} INFO - [2025-08-07 07:50:16,110] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:50:16,118] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:50:16,150] {logging_mixin.py:115} INFO - [2025-08-07 07:50:16,149] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:50:16,173] {logging_mixin.py:115} INFO - [2025-08-07 07:50:16,173] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:50:16.173465+00:00, run_after=2025-08-07T07:50:16.173465+00:00
+[2025-08-07 07:50:16,188] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.083 seconds
+[2025-08-07 07:50:46,268] {processor.py:153} INFO - Started process (PID=27788) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:50:46,269] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:50:46,269] {logging_mixin.py:115} INFO - [2025-08-07 07:50:46,269] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:50:46,277] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:50:46,307] {logging_mixin.py:115} INFO - [2025-08-07 07:50:46,307] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:50:46,329] {logging_mixin.py:115} INFO - [2025-08-07 07:50:46,329] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:50:46.328902+00:00, run_after=2025-08-07T07:50:46.328902+00:00
+[2025-08-07 07:50:46,346] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.081 seconds
+[2025-08-07 07:51:16,424] {processor.py:153} INFO - Started process (PID=27793) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:51:16,425] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:51:16,426] {logging_mixin.py:115} INFO - [2025-08-07 07:51:16,426] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:51:16,433] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:51:16,464] {logging_mixin.py:115} INFO - [2025-08-07 07:51:16,464] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:51:16,486] {logging_mixin.py:115} INFO - [2025-08-07 07:51:16,486] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:51:16.485976+00:00, run_after=2025-08-07T07:51:16.485976+00:00
+[2025-08-07 07:51:16,501] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.080 seconds
+[2025-08-07 07:51:46,585] {processor.py:153} INFO - Started process (PID=27798) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:51:46,585] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:51:46,586] {logging_mixin.py:115} INFO - [2025-08-07 07:51:46,586] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:51:46,596] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:51:46,633] {logging_mixin.py:115} INFO - [2025-08-07 07:51:46,632] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:51:46,660] {logging_mixin.py:115} INFO - [2025-08-07 07:51:46,660] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:51:46.659724+00:00, run_after=2025-08-07T07:51:46.659724+00:00
+[2025-08-07 07:51:46,675] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.095 seconds
+[2025-08-07 07:52:16,752] {processor.py:153} INFO - Started process (PID=27803) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:52:16,754] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:52:16,755] {logging_mixin.py:115} INFO - [2025-08-07 07:52:16,755] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:52:16,761] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:52:16,794] {logging_mixin.py:115} INFO - [2025-08-07 07:52:16,794] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:52:16,815] {logging_mixin.py:115} INFO - [2025-08-07 07:52:16,815] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:52:16.815528+00:00, run_after=2025-08-07T07:52:16.815528+00:00
+[2025-08-07 07:52:16,832] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.083 seconds
+[2025-08-07 07:52:46,911] {processor.py:153} INFO - Started process (PID=27808) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:52:46,911] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:52:46,912] {logging_mixin.py:115} INFO - [2025-08-07 07:52:46,912] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:52:46,920] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:52:46,953] {logging_mixin.py:115} INFO - [2025-08-07 07:52:46,953] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:52:46,977] {logging_mixin.py:115} INFO - [2025-08-07 07:52:46,977] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:52:46.976665+00:00, run_after=2025-08-07T07:52:46.976665+00:00
+[2025-08-07 07:52:46,994] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.088 seconds
+[2025-08-07 07:53:17,068] {processor.py:153} INFO - Started process (PID=27813) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:53:17,069] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:53:17,070] {logging_mixin.py:115} INFO - [2025-08-07 07:53:17,070] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:53:17,077] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:53:17,108] {logging_mixin.py:115} INFO - [2025-08-07 07:53:17,108] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:53:17,129] {logging_mixin.py:115} INFO - [2025-08-07 07:53:17,129] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:53:17.129388+00:00, run_after=2025-08-07T07:53:17.129388+00:00
+[2025-08-07 07:53:17,146] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.082 seconds
+[2025-08-07 07:53:47,227] {processor.py:153} INFO - Started process (PID=27818) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:53:47,228] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:53:47,229] {logging_mixin.py:115} INFO - [2025-08-07 07:53:47,228] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:53:47,235] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:53:47,269] {logging_mixin.py:115} INFO - [2025-08-07 07:53:47,269] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:53:47,290] {logging_mixin.py:115} INFO - [2025-08-07 07:53:47,290] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:53:47.290518+00:00, run_after=2025-08-07T07:53:47.290518+00:00
+[2025-08-07 07:53:47,305] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.082 seconds
+[2025-08-07 07:54:17,387] {processor.py:153} INFO - Started process (PID=27823) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:54:17,389] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:54:17,389] {logging_mixin.py:115} INFO - [2025-08-07 07:54:17,389] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:54:17,398] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:54:17,430] {logging_mixin.py:115} INFO - [2025-08-07 07:54:17,429] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:54:17,453] {logging_mixin.py:115} INFO - [2025-08-07 07:54:17,453] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:54:17.453307+00:00, run_after=2025-08-07T07:54:17.453307+00:00
+[2025-08-07 07:54:17,468] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.086 seconds
+[2025-08-07 07:54:47,551] {processor.py:153} INFO - Started process (PID=27828) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:54:47,552] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:54:47,552] {logging_mixin.py:115} INFO - [2025-08-07 07:54:47,552] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:54:47,560] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:54:47,591] {logging_mixin.py:115} INFO - [2025-08-07 07:54:47,591] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:54:47,615] {logging_mixin.py:115} INFO - [2025-08-07 07:54:47,615] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:54:47.615352+00:00, run_after=2025-08-07T07:54:47.615352+00:00
+[2025-08-07 07:54:47,630] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.083 seconds
+[2025-08-07 07:55:17,717] {processor.py:153} INFO - Started process (PID=27833) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:55:17,719] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:55:17,720] {logging_mixin.py:115} INFO - [2025-08-07 07:55:17,720] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:55:17,727] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:55:17,758] {logging_mixin.py:115} INFO - [2025-08-07 07:55:17,758] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:55:17,780] {logging_mixin.py:115} INFO - [2025-08-07 07:55:17,780] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:55:17.779847+00:00, run_after=2025-08-07T07:55:17.779847+00:00
+[2025-08-07 07:55:17,795] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.083 seconds
+[2025-08-07 07:55:47,878] {processor.py:153} INFO - Started process (PID=27838) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:55:47,879] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:55:47,880] {logging_mixin.py:115} INFO - [2025-08-07 07:55:47,880] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:55:47,889] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:55:47,921] {logging_mixin.py:115} INFO - [2025-08-07 07:55:47,921] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:55:47,942] {logging_mixin.py:115} INFO - [2025-08-07 07:55:47,942] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:55:47.942216+00:00, run_after=2025-08-07T07:55:47.942216+00:00
+[2025-08-07 07:55:47,957] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.083 seconds
+[2025-08-07 07:56:18,036] {processor.py:153} INFO - Started process (PID=27843) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:56:18,038] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:56:18,039] {logging_mixin.py:115} INFO - [2025-08-07 07:56:18,039] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:56:18,048] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:56:18,082] {logging_mixin.py:115} INFO - [2025-08-07 07:56:18,082] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:56:18,104] {logging_mixin.py:115} INFO - [2025-08-07 07:56:18,104] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:56:18.104299+00:00, run_after=2025-08-07T07:56:18.104299+00:00
+[2025-08-07 07:56:18,120] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.088 seconds
+[2025-08-07 07:56:48,204] {processor.py:153} INFO - Started process (PID=27848) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:56:48,204] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:56:48,205] {logging_mixin.py:115} INFO - [2025-08-07 07:56:48,205] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:56:48,211] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:56:48,243] {logging_mixin.py:115} INFO - [2025-08-07 07:56:48,243] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:56:48,265] {logging_mixin.py:115} INFO - [2025-08-07 07:56:48,265] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:56:48.264770+00:00, run_after=2025-08-07T07:56:48.264770+00:00
+[2025-08-07 07:56:48,279] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.078 seconds
+[2025-08-07 07:57:18,355] {processor.py:153} INFO - Started process (PID=27853) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:57:18,356] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:57:18,357] {logging_mixin.py:115} INFO - [2025-08-07 07:57:18,356] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:57:18,366] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:57:18,404] {logging_mixin.py:115} INFO - [2025-08-07 07:57:18,403] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:57:18,436] {logging_mixin.py:115} INFO - [2025-08-07 07:57:18,436] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:57:18.435760+00:00, run_after=2025-08-07T07:57:18.435760+00:00
+[2025-08-07 07:57:18,454] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.104 seconds
+[2025-08-07 07:57:48,543] {processor.py:153} INFO - Started process (PID=27858) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:57:48,543] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:57:48,544] {logging_mixin.py:115} INFO - [2025-08-07 07:57:48,544] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:57:48,551] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:57:48,583] {logging_mixin.py:115} INFO - [2025-08-07 07:57:48,583] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:57:48,609] {logging_mixin.py:115} INFO - [2025-08-07 07:57:48,609] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:57:48.608732+00:00, run_after=2025-08-07T07:57:48.608732+00:00
+[2025-08-07 07:57:48,624] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.085 seconds
+[2025-08-07 07:58:18,709] {processor.py:153} INFO - Started process (PID=27863) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:58:18,711] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:58:18,712] {logging_mixin.py:115} INFO - [2025-08-07 07:58:18,712] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:58:18,719] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:58:18,751] {logging_mixin.py:115} INFO - [2025-08-07 07:58:18,751] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:58:18,773] {logging_mixin.py:115} INFO - [2025-08-07 07:58:18,773] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:58:18.772722+00:00, run_after=2025-08-07T07:58:18.772722+00:00
+[2025-08-07 07:58:18,787] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.081 seconds
+[2025-08-07 07:58:48,866] {processor.py:153} INFO - Started process (PID=27868) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:58:48,866] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:58:48,867] {logging_mixin.py:115} INFO - [2025-08-07 07:58:48,867] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:58:48,877] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:58:48,914] {logging_mixin.py:115} INFO - [2025-08-07 07:58:48,914] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:58:48,943] {logging_mixin.py:115} INFO - [2025-08-07 07:58:48,943] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:58:48.943313+00:00, run_after=2025-08-07T07:58:48.943313+00:00
+[2025-08-07 07:58:48,961] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.102 seconds
+[2025-08-07 07:59:19,048] {processor.py:153} INFO - Started process (PID=27873) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:59:19,050] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:59:19,050] {logging_mixin.py:115} INFO - [2025-08-07 07:59:19,050] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:59:19,058] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:59:19,095] {logging_mixin.py:115} INFO - [2025-08-07 07:59:19,095] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:59:19,122] {logging_mixin.py:115} INFO - [2025-08-07 07:59:19,122] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:59:19.121442+00:00, run_after=2025-08-07T07:59:19.121442+00:00
+[2025-08-07 07:59:19,142] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.098 seconds
+[2025-08-07 07:59:49,231] {processor.py:153} INFO - Started process (PID=27878) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:59:49,231] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 07:59:49,232] {logging_mixin.py:115} INFO - [2025-08-07 07:59:49,232] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:59:49,243] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 07:59:49,289] {logging_mixin.py:115} INFO - [2025-08-07 07:59:49,289] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 07:59:49,329] {logging_mixin.py:115} INFO - [2025-08-07 07:59:49,329] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T05:59:49.328770+00:00, run_after=2025-08-07T07:59:49.328770+00:00
+[2025-08-07 07:59:49,351] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.125 seconds
+[2025-08-07 08:00:19,438] {processor.py:153} INFO - Started process (PID=27883) to work on /opt/airflow/dags/dag_meteo.py
+[2025-08-07 08:00:19,440] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_meteo.py for tasks to queue
+[2025-08-07 08:00:19,441] {logging_mixin.py:115} INFO - [2025-08-07 08:00:19,440] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 08:00:19,452] {processor.py:651} INFO - DAG(s) dict_keys(['send_weather_to_kafka']) retrieved from /opt/airflow/dags/dag_meteo.py
+[2025-08-07 08:00:19,489] {logging_mixin.py:115} INFO - [2025-08-07 08:00:19,489] {dag.py:2371} INFO - Sync 1 DAGs
+[2025-08-07 08:00:19,510] {logging_mixin.py:115} INFO - [2025-08-07 08:00:19,510] {dag.py:2919} INFO - Setting next_dagrun for send_weather_to_kafka to 2025-08-07T06:00:19.510492+00:00, run_after=2025-08-07T08:00:19.510492+00:00
+[2025-08-07 08:00:19,524] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_meteo.py took 0.091 seconds

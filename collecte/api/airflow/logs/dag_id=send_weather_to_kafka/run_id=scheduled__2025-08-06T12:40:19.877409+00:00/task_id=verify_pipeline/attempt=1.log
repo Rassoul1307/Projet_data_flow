@@ -1,0 +1,30 @@
+[2025-08-06 17:27:27,457] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: send_weather_to_kafka.verify_pipeline scheduled__2025-08-06T12:40:19.877409+00:00 [queued]>
+[2025-08-06 17:27:27,473] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: send_weather_to_kafka.verify_pipeline scheduled__2025-08-06T12:40:19.877409+00:00 [queued]>
+[2025-08-06 17:27:27,473] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-06 17:27:27,473] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2025-08-06 17:27:27,473] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-06 17:27:27,493] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): verify_pipeline> on 2025-08-06 12:40:19.877409+00:00
+[2025-08-06 17:27:27,500] {standard_task_runner.py:52} INFO - Started process 24939 to run task
+[2025-08-06 17:27:27,504] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'send_weather_to_kafka', 'verify_pipeline', 'scheduled__2025-08-06T12:40:19.877409+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/dag_meteo.py', '--cfg-path', '/tmp/tmpwklk1g6s', '--error-file', '/tmp/tmpfp5v8_ji']
+[2025-08-06 17:27:27,505] {standard_task_runner.py:80} INFO - Job 40: Subtask verify_pipeline
+[2025-08-06 17:27:27,528] {logging_mixin.py:115} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-08-06 17:27:27,593] {task_command.py:369} INFO - Running <TaskInstance: send_weather_to_kafka.verify_pipeline scheduled__2025-08-06T12:40:19.877409+00:00 [running]> on host 536c12e0b7f9
+[2025-08-06 17:27:27,701] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=send_weather_to_kafka
+AIRFLOW_CTX_TASK_ID=verify_pipeline
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-06T12:40:19.877409+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-06T12:40:19.877409+00:00
+[2025-08-06 17:27:27,702] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-08-06 17:27:27,703] {subprocess.py:74} INFO - Running command: ['bash', '-c', '\n            echo " Attente traitement Logstash..." && sleep 30 &&\n            curl -s "http://elasticsearch:9200/_cat/indices/weather*" || echo "Pas encore d\'index weather"\n        ']
+[2025-08-06 17:27:27,718] {subprocess.py:85} INFO - Output:
+[2025-08-06 17:27:27,721] {subprocess.py:92} INFO -  Attente traitement Logstash...
+[2025-08-06 17:27:57,745] {subprocess.py:92} INFO - yellow open weather_data ncGfBSZ5Rl2wP2uO7hVB2g 1 1 6 0 27.9kb 27.9kb
+[2025-08-06 17:27:57,747] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-08-06 17:27:57,790] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=send_weather_to_kafka, task_id=verify_pipeline, execution_date=20250806T124019, start_date=20250806T172727, end_date=20250806T172757
+[2025-08-06 17:27:57,843] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-06 17:27:57,883] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
