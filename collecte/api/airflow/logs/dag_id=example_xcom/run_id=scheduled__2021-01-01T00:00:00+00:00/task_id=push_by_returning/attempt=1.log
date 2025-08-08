@@ -1,0 +1,161 @@
+[2025-08-07 03:21:11,462] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:21:11,623] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:21:11,624] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:21:11,625] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:21:11,629] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:21:11,704] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): push_by_returning> on 2021-01-01 00:00:00+00:00
+[2025-08-07 03:21:11,730] {standard_task_runner.py:52} INFO - Started process 320 to run task
+[2025-08-07 03:21:11,748] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'push_by_returning', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmp9eipcew7', '--error-file', '/tmp/tmpsjiskqol']
+[2025-08-07 03:21:11,755] {standard_task_runner.py:80} INFO - Job 9: Subtask push_by_returning
+[2025-08-07 03:21:12,055] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [running]> on host f83ee74b89ef
+[2025-08-07 03:21:12,855] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=push_by_returning
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 03:21:12,856] {python.py:173} INFO - Done. Returned value was: {'a': 'b'}
+[2025-08-07 03:21:12,948] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=push_by_returning, execution_date=20210101T000000, start_date=20250807T032111, end_date=20250807T032112
+[2025-08-07 03:21:13,009] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:21:13,228] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 03:29:48,713] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:29:48,751] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:29:48,752] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:29:48,752] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:29:48,752] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:29:48,786] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): push_by_returning> on 2021-01-01 00:00:00+00:00
+[2025-08-07 03:29:48,797] {standard_task_runner.py:52} INFO - Started process 320 to run task
+[2025-08-07 03:29:48,812] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'push_by_returning', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpx_41_p_3', '--error-file', '/tmp/tmpvrj5jaep']
+[2025-08-07 03:29:48,817] {standard_task_runner.py:80} INFO - Job 13: Subtask push_by_returning
+[2025-08-07 03:29:49,032] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [running]> on host 47565329e35b
+[2025-08-07 03:29:49,966] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=push_by_returning
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 03:29:49,968] {python.py:173} INFO - Done. Returned value was: {'a': 'b'}
+[2025-08-07 03:29:50,208] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=push_by_returning, execution_date=20210101T000000, start_date=20250807T032948, end_date=20250807T032950
+[2025-08-07 03:29:50,292] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:29:50,395] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 03:39:57,118] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:39:57,159] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:39:57,161] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:39:57,161] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:39:57,162] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:39:57,243] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): push_by_returning> on 2021-01-01 00:00:00+00:00
+[2025-08-07 03:39:57,264] {standard_task_runner.py:52} INFO - Started process 325 to run task
+[2025-08-07 03:39:57,279] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'push_by_returning', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpf9obzu_v', '--error-file', '/tmp/tmprem45klz']
+[2025-08-07 03:39:57,281] {standard_task_runner.py:80} INFO - Job 12: Subtask push_by_returning
+[2025-08-07 03:39:57,425] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [running]> on host 92a46ac2453f
+[2025-08-07 03:39:58,050] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=push_by_returning
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 03:39:58,052] {python.py:173} INFO - Done. Returned value was: {'a': 'b'}
+[2025-08-07 03:39:58,114] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=push_by_returning, execution_date=20210101T000000, start_date=20250807T033957, end_date=20250807T033958
+[2025-08-07 03:39:58,173] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:39:58,484] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 10:40:18,597] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 10:40:18,634] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 10:40:18,635] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 10:40:18,636] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 10:40:18,637] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 10:40:18,691] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): push_by_returning> on 2021-01-01 00:00:00+00:00
+[2025-08-07 10:40:18,711] {standard_task_runner.py:52} INFO - Started process 313 to run task
+[2025-08-07 10:40:18,715] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'push_by_returning', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpsnmp0fqf', '--error-file', '/tmp/tmpmipntxnx']
+[2025-08-07 10:40:18,717] {standard_task_runner.py:80} INFO - Job 8: Subtask push_by_returning
+[2025-08-07 10:40:18,881] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [running]> on host 81d3b97a0728
+[2025-08-07 10:40:19,556] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=push_by_returning
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 10:40:19,557] {python.py:173} INFO - Done. Returned value was: {'a': 'b'}
+[2025-08-07 10:40:19,853] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=push_by_returning, execution_date=20210101T000000, start_date=20250807T104018, end_date=20250807T104019
+[2025-08-07 10:40:19,992] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 10:40:20,155] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 11:11:44,566] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 11:11:44,599] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 11:11:44,599] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 11:11:44,599] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 11:11:44,600] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 11:11:44,648] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): push_by_returning> on 2021-01-01 00:00:00+00:00
+[2025-08-07 11:11:44,658] {standard_task_runner.py:52} INFO - Started process 309 to run task
+[2025-08-07 11:11:44,679] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'push_by_returning', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmptc6d6axz', '--error-file', '/tmp/tmpmqf7ahta']
+[2025-08-07 11:11:44,685] {standard_task_runner.py:80} INFO - Job 10: Subtask push_by_returning
+[2025-08-07 11:11:44,881] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [running]> on host b22dcc1493a4
+[2025-08-07 11:11:45,901] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=push_by_returning
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 11:11:45,903] {python.py:173} INFO - Done. Returned value was: {'a': 'b'}
+[2025-08-07 11:11:46,361] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=push_by_returning, execution_date=20210101T000000, start_date=20250807T111144, end_date=20250807T111146
+[2025-08-07 11:11:46,445] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 11:11:46,574] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 20:33:08,808] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 20:33:08,825] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 20:33:08,826] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 20:33:08,826] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 20:33:08,826] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 20:33:08,856] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): push_by_returning> on 2021-01-01 00:00:00+00:00
+[2025-08-07 20:33:08,868] {standard_task_runner.py:52} INFO - Started process 316 to run task
+[2025-08-07 20:33:08,883] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'push_by_returning', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '14', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpto8sz4np', '--error-file', '/tmp/tmpap6r48ce']
+[2025-08-07 20:33:08,889] {standard_task_runner.py:80} INFO - Job 14: Subtask push_by_returning
+[2025-08-07 20:33:09,199] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [running]> on host 034e74559af0
+[2025-08-07 20:33:32,021] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=push_by_returning
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 20:33:32,024] {python.py:173} INFO - Done. Returned value was: {'a': 'b'}
+[2025-08-07 20:33:36,675] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=push_by_returning, execution_date=20210101T000000, start_date=20250807T203308, end_date=20250807T203336
+[2025-08-07 20:33:36,819] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 20:33:37,266] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-08 08:55:05,260] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-08 08:55:05,309] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-08 08:55:05,310] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:55:05,311] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-08 08:55:05,311] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:55:05,389] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): push_by_returning> on 2021-01-01 00:00:00+00:00
+[2025-08-08 08:55:05,425] {standard_task_runner.py:52} INFO - Started process 321 to run task
+[2025-08-08 08:55:05,459] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'push_by_returning', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpuv77kkdp', '--error-file', '/tmp/tmpvc6yipll']
+[2025-08-08 08:55:05,465] {standard_task_runner.py:80} INFO - Job 8: Subtask push_by_returning
+[2025-08-08 08:55:05,778] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.push_by_returning scheduled__2021-01-01T00:00:00+00:00 [running]> on host abdeb7f02efc
+[2025-08-08 08:55:06,386] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=push_by_returning
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-08 08:55:06,389] {python.py:173} INFO - Done. Returned value was: {'a': 'b'}
+[2025-08-08 08:55:06,511] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=push_by_returning, execution_date=20210101T000000, start_date=20250808T085505, end_date=20250808T085506
+[2025-08-08 08:55:06,611] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-08 08:55:06,848] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

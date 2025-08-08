@@ -1,1 +1,6 @@
 monenv/
+redis_data/
+esdata/
+airflow_postgres_data/
+namenode-data/
+datanode-data/

@@ -1,0 +1,26 @@
+[2025-08-07 20:33:46,769] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_short_circuit_operator.condition_is_False scheduled__2025-08-06T20:33:42.976366+00:00 [queued]>
+[2025-08-07 20:33:46,792] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_short_circuit_operator.condition_is_False scheduled__2025-08-06T20:33:42.976366+00:00 [queued]>
+[2025-08-07 20:33:46,792] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 20:33:46,793] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 20:33:46,793] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 20:33:46,823] {taskinstance.py:1377} INFO - Executing <Task(ShortCircuitOperator): condition_is_False> on 2025-08-06 20:33:42.976366+00:00
+[2025-08-07 20:33:46,842] {standard_task_runner.py:52} INFO - Started process 427 to run task
+[2025-08-07 20:33:46,868] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_short_circuit_operator', 'condition_is_False', 'scheduled__2025-08-06T20:33:42.976366+00:00', '--job-id', '25', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_short_circuit_operator.py', '--cfg-path', '/tmp/tmpjn752xa_', '--error-file', '/tmp/tmpouch0j4k']
+[2025-08-07 20:33:46,880] {standard_task_runner.py:80} INFO - Job 25: Subtask condition_is_False
+[2025-08-07 20:33:47,316] {task_command.py:369} INFO - Running <TaskInstance: example_short_circuit_operator.condition_is_False scheduled__2025-08-06T20:33:42.976366+00:00 [running]> on host 034e74559af0
+[2025-08-07 20:33:47,919] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_short_circuit_operator
+AIRFLOW_CTX_TASK_ID=condition_is_False
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-06T20:33:42.976366+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-06T20:33:42.976366+00:00
+[2025-08-07 20:33:47,928] {python.py:173} INFO - Done. Returned value was: False
+[2025-08-07 20:33:47,929] {python.py:259} INFO - Condition result is False
+[2025-08-07 20:33:47,929] {python.py:273} INFO - Skipping all downstream tasks...
+[2025-08-07 20:33:48,102] {python.py:281} INFO - Done.
+[2025-08-07 20:33:48,175] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_short_circuit_operator, task_id=condition_is_False, execution_date=20250806T203342, start_date=20250807T203346, end_date=20250807T203348
+[2025-08-07 20:33:48,542] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 20:33:48,803] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,701 @@
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 73, in <module>
+    run()
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 64, in run
+    producer.send(KAFKA_TOPIC, record)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 840, in send
+    self._wait_on_metadata(topic, timer.timeout_ms)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 964, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 73, in <module>
+    run()
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 64, in run
+    producer.send(KAFKA_TOPIC, record)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 840, in send
+    self._wait_on_metadata(topic, timer.timeout_ms)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 964, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 73, in <module>
+    run()
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 64, in run
+    producer.send(KAFKA_TOPIC, record)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 840, in send
+    self._wait_on_metadata(topic, timer.timeout_ms)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 964, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 73, in <module>
+    run()
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 64, in run
+    producer.send(KAFKA_TOPIC, record)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 840, in send
+    self._wait_on_metadata(topic, timer.timeout_ms)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 964, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 73, in <module>
+    run()
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 64, in run
+    producer.send(KAFKA_TOPIC, record)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 840, in send
+    self._wait_on_metadata(topic, timer.timeout_ms)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 964, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 73, in <module>
+    run()
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 64, in run
+    producer.send(KAFKA_TOPIC, record)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 840, in send
+    self._wait_on_metadata(topic, timer.timeout_ms)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 964, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 73, in <module>
+    run()
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 64, in run
+    producer.send(KAFKA_TOPIC, record)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 840, in send
+    self._wait_on_metadata(topic, timer.timeout_ms)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 964, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 73, in <module>
+    run()
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 64, in run
+    producer.send(KAFKA_TOPIC, record)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 840, in send
+    self._wait_on_metadata(topic, timer.timeout_ms)
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 964, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 09:45:09', 'temperature': 28, 'humidity': 84, 'cloudCover': 15, 'windSpeed': 4.1, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 09:48:06', 'temperature': 28, 'humidity': 84, 'cloudCover': 15, 'windSpeed': 4.1, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 09:51:06', 'temperature': 28, 'humidity': 84, 'cloudCover': 15, 'windSpeed': 4.1, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 09:54:06', 'temperature': 28, 'humidity': 84, 'cloudCover': 15, 'windSpeed': 4.1, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 09:57:06', 'temperature': 28, 'humidity': 84, 'cloudCover': 15, 'windSpeed': 4.1, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 10:00:06', 'temperature': 28, 'humidity': 84, 'cloudCover': 15, 'windSpeed': 4.1, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 10:03:10', 'temperature': 28, 'humidity': 84, 'cloudCover': 15, 'windSpeed': 4.1, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 10:06:10', 'temperature': 27.3, 'humidity': 75, 'cloudCover': 15, 'windSpeed': 3.7, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 10:09:05', 'temperature': 27.3, 'humidity': 75, 'cloudCover': 15, 'windSpeed': 3.7, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 10:12:06', 'temperature': 27.3, 'humidity': 75, 'cloudCover': 15, 'windSpeed': 3.7, 'rainIntensity': 0}
+/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py:55: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "datetime": datetime.utcnow().strftime("%d-%m-%Y %H:%M:%S"),
+[Kafka] Message envoyé à meteo_data ➤ {'region': 'Dakar', 'latitude': 14.693425, 'longitude': -17.447938, 'datetime': '04-08-2025 10:15:05', 'temperature': 27.3, 'humidity': 75, 'cloudCover': 15, 'windSpeed': 3.7, 'rainIntensity': 0}
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+Traceback (most recent call last):
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/collecte/api/kafka/producer.py", line 13, in <module>
+    producer = KafkaProducer(
+               ^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/producer/kafka.py", line 481, in __init__
+    client = self.config['kafka_client'](
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 262, in __init__
+    self.config['api_version'] = self.check_version()
+                                 ^^^^^^^^^^^^^^^^^^^^
+  File "/home/alla-niang/Bureau/Orange_Digital_Center/Module_DATA/Docs_Projet_Dataflow/DataFlow_Data/monenv/lib/python3.12/site-packages/kafka/client_async.py", line 1074, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable

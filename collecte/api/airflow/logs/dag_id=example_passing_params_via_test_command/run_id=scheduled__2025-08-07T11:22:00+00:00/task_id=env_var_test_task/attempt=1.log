@@ -1,0 +1,23 @@
+[2025-08-07 11:23:01,476] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_passing_params_via_test_command.env_var_test_task scheduled__2025-08-07T11:22:00+00:00 [queued]>
+[2025-08-07 11:23:01,509] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_passing_params_via_test_command.env_var_test_task scheduled__2025-08-07T11:22:00+00:00 [queued]>
+[2025-08-07 11:23:01,510] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 11:23:01,510] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 11:23:01,510] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 11:23:01,560] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): env_var_test_task> on 2025-08-07 11:22:00+00:00
+[2025-08-07 11:23:01,576] {standard_task_runner.py:52} INFO - Started process 6327 to run task
+[2025-08-07 11:23:01,583] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_passing_params_via_test_command', 'env_var_test_task', 'scheduled__2025-08-07T11:22:00+00:00', '--job-id', '126', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_passing_params_via_test_command.py', '--cfg-path', '/tmp/tmpf_66a9op', '--error-file', '/tmp/tmpz2midefu']
+[2025-08-07 11:23:01,587] {standard_task_runner.py:80} INFO - Job 126: Subtask env_var_test_task
+[2025-08-07 11:23:01,733] {task_command.py:369} INFO - Running <TaskInstance: example_passing_params_via_test_command.env_var_test_task scheduled__2025-08-07T11:22:00+00:00 [running]> on host b22dcc1493a4
+[2025-08-07 11:23:02,199] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_passing_params_via_test_command
+AIRFLOW_CTX_TASK_ID=env_var_test_task
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-07T11:22:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-07T11:22:00+00:00
+[2025-08-07 11:23:02,201] {python.py:173} INFO - Done. Returned value was: None
+[2025-08-07 11:23:02,236] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_passing_params_via_test_command, task_id=env_var_test_task, execution_date=20250807T112200, start_date=20250807T112301, end_date=20250807T112302
+[2025-08-07 11:23:02,318] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 11:23:02,437] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

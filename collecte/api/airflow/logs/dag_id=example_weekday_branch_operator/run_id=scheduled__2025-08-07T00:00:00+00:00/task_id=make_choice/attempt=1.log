@@ -1,0 +1,48 @@
+[2025-08-08 08:32:51,444] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-08-07T00:00:00+00:00 [queued]>
+[2025-08-08 08:32:51,577] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-08-07T00:00:00+00:00 [queued]>
+[2025-08-08 08:32:51,578] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:32:51,578] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-08 08:32:51,578] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:32:51,707] {taskinstance.py:1377} INFO - Executing <Task(BranchDayOfWeekOperator): make_choice> on 2025-08-07 00:00:00+00:00
+[2025-08-08 08:32:51,807] {standard_task_runner.py:52} INFO - Started process 8216 to run task
+[2025-08-08 08:32:51,833] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_weekday_branch_operator', 'make_choice', 'scheduled__2025-08-07T00:00:00+00:00', '--job-id', '698', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_branch_day_of_week_operator.py', '--cfg-path', '/tmp/tmp85zeb8i_', '--error-file', '/tmp/tmpys85yfca']
+[2025-08-08 08:32:51,837] {standard_task_runner.py:80} INFO - Job 698: Subtask make_choice
+[2025-08-08 08:32:53,085] {task_command.py:369} INFO - Running <TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-08-07T00:00:00+00:00 [running]> on host 98bad2c91b1f
+[2025-08-08 08:32:54,715] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_weekday_branch_operator
+AIRFLOW_CTX_TASK_ID=make_choice
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-07T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-07T00:00:00+00:00
+[2025-08-08 08:32:54,727] {skipmixin.py:140} INFO - Following branch branch_false
+[2025-08-08 08:32:54,727] {skipmixin.py:175} INFO - Skipping tasks ['branch_true']
+[2025-08-08 08:32:55,187] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_weekday_branch_operator, task_id=make_choice, execution_date=20250807T000000, start_date=20250808T083251, end_date=20250808T083255
+[2025-08-08 08:32:55,278] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-08 08:32:56,133] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-08 08:55:07,273] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-08-07T00:00:00+00:00 [queued]>
+[2025-08-08 08:55:07,309] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-08-07T00:00:00+00:00 [queued]>
+[2025-08-08 08:55:07,310] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:55:07,310] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-08 08:55:07,311] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:55:07,369] {taskinstance.py:1377} INFO - Executing <Task(BranchDayOfWeekOperator): make_choice> on 2025-08-07 00:00:00+00:00
+[2025-08-08 08:55:07,385] {standard_task_runner.py:52} INFO - Started process 367 to run task
+[2025-08-08 08:55:07,396] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_weekday_branch_operator', 'make_choice', 'scheduled__2025-08-07T00:00:00+00:00', '--job-id', '17', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_branch_day_of_week_operator.py', '--cfg-path', '/tmp/tmpybb_roh_', '--error-file', '/tmp/tmp1a6tvqop']
+[2025-08-08 08:55:07,400] {standard_task_runner.py:80} INFO - Job 17: Subtask make_choice
+[2025-08-08 08:55:07,526] {task_command.py:369} INFO - Running <TaskInstance: example_weekday_branch_operator.make_choice scheduled__2025-08-07T00:00:00+00:00 [running]> on host abdeb7f02efc
+[2025-08-08 08:55:07,839] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_weekday_branch_operator
+AIRFLOW_CTX_TASK_ID=make_choice
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-07T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-07T00:00:00+00:00
+[2025-08-08 08:55:07,843] {skipmixin.py:140} INFO - Following branch branch_false
+[2025-08-08 08:55:07,843] {skipmixin.py:175} INFO - Skipping tasks ['branch_true']
+[2025-08-08 08:55:07,984] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_weekday_branch_operator, task_id=make_choice, execution_date=20250807T000000, start_date=20250808T085507, end_date=20250808T085507
+[2025-08-08 08:55:08,061] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-08 08:55:08,361] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

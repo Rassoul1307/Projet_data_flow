@@ -1,0 +1,154 @@
+[2025-08-07 03:21:08,545] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:21:08,564] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:21:08,564] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:21:08,564] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:21:08,564] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:21:08,602] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): test_trigger_dagrun> on 2021-01-01 00:00:00+00:00
+[2025-08-07 03:21:08,613] {standard_task_runner.py:52} INFO - Started process 243 to run task
+[2025-08-07 03:21:08,619] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_trigger_controller_dag', 'test_trigger_dagrun', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_trigger_controller_dag.py', '--cfg-path', '/tmp/tmpmmydfbto', '--error-file', '/tmp/tmpclgzinkh']
+[2025-08-07 03:21:08,620] {standard_task_runner.py:80} INFO - Job 3: Subtask test_trigger_dagrun
+[2025-08-07 03:21:08,717] {task_command.py:369} INFO - Running <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [running]> on host f83ee74b89ef
+[2025-08-07 03:21:09,176] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_trigger_controller_dag
+AIRFLOW_CTX_TASK_ID=test_trigger_dagrun
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 03:21:09,347] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_trigger_controller_dag, task_id=test_trigger_dagrun, execution_date=20210101T000000, start_date=20250807T032108, end_date=20250807T032109
+[2025-08-07 03:21:09,397] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:21:09,457] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 03:29:46,049] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:29:46,066] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:29:46,066] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:29:46,067] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:29:46,067] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:29:46,103] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): test_trigger_dagrun> on 2021-01-01 00:00:00+00:00
+[2025-08-07 03:29:46,127] {standard_task_runner.py:52} INFO - Started process 237 to run task
+[2025-08-07 03:29:46,137] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_trigger_controller_dag', 'test_trigger_dagrun', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_trigger_controller_dag.py', '--cfg-path', '/tmp/tmpmaca9y76', '--error-file', '/tmp/tmpa17u37np']
+[2025-08-07 03:29:46,139] {standard_task_runner.py:80} INFO - Job 2: Subtask test_trigger_dagrun
+[2025-08-07 03:29:46,285] {task_command.py:369} INFO - Running <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [running]> on host 47565329e35b
+[2025-08-07 03:29:46,728] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_trigger_controller_dag
+AIRFLOW_CTX_TASK_ID=test_trigger_dagrun
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 03:29:46,949] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_trigger_controller_dag, task_id=test_trigger_dagrun, execution_date=20210101T000000, start_date=20250807T032946, end_date=20250807T032946
+[2025-08-07 03:29:47,004] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:29:47,434] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 03:39:54,725] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:39:54,756] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:39:54,756] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:39:54,756] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:39:54,756] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:39:54,790] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): test_trigger_dagrun> on 2021-01-01 00:00:00+00:00
+[2025-08-07 03:39:54,798] {standard_task_runner.py:52} INFO - Started process 246 to run task
+[2025-08-07 03:39:54,803] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_trigger_controller_dag', 'test_trigger_dagrun', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_trigger_controller_dag.py', '--cfg-path', '/tmp/tmpfmezx6j5', '--error-file', '/tmp/tmp1dv467_2']
+[2025-08-07 03:39:54,804] {standard_task_runner.py:80} INFO - Job 4: Subtask test_trigger_dagrun
+[2025-08-07 03:39:54,943] {task_command.py:369} INFO - Running <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [running]> on host 92a46ac2453f
+[2025-08-07 03:39:55,322] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_trigger_controller_dag
+AIRFLOW_CTX_TASK_ID=test_trigger_dagrun
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 03:39:55,557] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_trigger_controller_dag, task_id=test_trigger_dagrun, execution_date=20210101T000000, start_date=20250807T033954, end_date=20250807T033955
+[2025-08-07 03:39:55,617] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:39:55,674] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 10:40:16,688] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 10:40:16,708] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 10:40:16,708] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 10:40:16,708] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 10:40:16,708] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 10:40:16,734] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): test_trigger_dagrun> on 2021-01-01 00:00:00+00:00
+[2025-08-07 10:40:16,745] {standard_task_runner.py:52} INFO - Started process 253 to run task
+[2025-08-07 10:40:16,751] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_trigger_controller_dag', 'test_trigger_dagrun', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_trigger_controller_dag.py', '--cfg-path', '/tmp/tmpsz8ahgtb', '--error-file', '/tmp/tmp9rxy4w1k']
+[2025-08-07 10:40:16,754] {standard_task_runner.py:80} INFO - Job 3: Subtask test_trigger_dagrun
+[2025-08-07 10:40:16,914] {task_command.py:369} INFO - Running <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [running]> on host 81d3b97a0728
+[2025-08-07 10:40:17,276] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_trigger_controller_dag
+AIRFLOW_CTX_TASK_ID=test_trigger_dagrun
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 10:40:17,470] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_trigger_controller_dag, task_id=test_trigger_dagrun, execution_date=20210101T000000, start_date=20250807T104016, end_date=20250807T104017
+[2025-08-07 10:40:17,530] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 10:40:17,594] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 11:11:42,041] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 11:11:42,074] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 11:11:42,075] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 11:11:42,075] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 11:11:42,076] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 11:11:42,117] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): test_trigger_dagrun> on 2021-01-01 00:00:00+00:00
+[2025-08-07 11:11:42,134] {standard_task_runner.py:52} INFO - Started process 240 to run task
+[2025-08-07 11:11:42,143] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_trigger_controller_dag', 'test_trigger_dagrun', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_trigger_controller_dag.py', '--cfg-path', '/tmp/tmpyorapov5', '--error-file', '/tmp/tmpdocqg17_']
+[2025-08-07 11:11:42,147] {standard_task_runner.py:80} INFO - Job 3: Subtask test_trigger_dagrun
+[2025-08-07 11:11:42,300] {task_command.py:369} INFO - Running <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [running]> on host b22dcc1493a4
+[2025-08-07 11:11:42,705] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_trigger_controller_dag
+AIRFLOW_CTX_TASK_ID=test_trigger_dagrun
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 11:11:43,167] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_trigger_controller_dag, task_id=test_trigger_dagrun, execution_date=20210101T000000, start_date=20250807T111142, end_date=20250807T111143
+[2025-08-07 11:11:43,255] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 11:11:43,318] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 20:33:06,568] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 20:33:06,586] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 20:33:06,586] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 20:33:06,586] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 20:33:06,586] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 20:33:06,608] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): test_trigger_dagrun> on 2021-01-01 00:00:00+00:00
+[2025-08-07 20:33:06,617] {standard_task_runner.py:52} INFO - Started process 243 to run task
+[2025-08-07 20:33:06,621] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_trigger_controller_dag', 'test_trigger_dagrun', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_trigger_controller_dag.py', '--cfg-path', '/tmp/tmprdo6yh72', '--error-file', '/tmp/tmp0kr75zb2']
+[2025-08-07 20:33:06,622] {standard_task_runner.py:80} INFO - Job 4: Subtask test_trigger_dagrun
+[2025-08-07 20:33:06,725] {task_command.py:369} INFO - Running <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [running]> on host 034e74559af0
+[2025-08-07 20:33:07,204] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_trigger_controller_dag
+AIRFLOW_CTX_TASK_ID=test_trigger_dagrun
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 20:33:07,520] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_trigger_controller_dag, task_id=test_trigger_dagrun, execution_date=20210101T000000, start_date=20250807T203306, end_date=20250807T203307
+[2025-08-07 20:33:07,556] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 20:33:07,636] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-08 08:55:02,738] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-08 08:55:02,753] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-08 08:55:02,754] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:55:02,754] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-08 08:55:02,755] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:55:02,783] {taskinstance.py:1377} INFO - Executing <Task(TriggerDagRunOperator): test_trigger_dagrun> on 2021-01-01 00:00:00+00:00
+[2025-08-08 08:55:02,790] {standard_task_runner.py:52} INFO - Started process 247 to run task
+[2025-08-08 08:55:02,796] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_trigger_controller_dag', 'test_trigger_dagrun', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_trigger_controller_dag.py', '--cfg-path', '/tmp/tmp1ambwfvt', '--error-file', '/tmp/tmpggw0l29w']
+[2025-08-08 08:55:02,798] {standard_task_runner.py:80} INFO - Job 2: Subtask test_trigger_dagrun
+[2025-08-08 08:55:02,910] {task_command.py:369} INFO - Running <TaskInstance: example_trigger_controller_dag.test_trigger_dagrun scheduled__2021-01-01T00:00:00+00:00 [running]> on host abdeb7f02efc
+[2025-08-08 08:55:03,262] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_trigger_controller_dag
+AIRFLOW_CTX_TASK_ID=test_trigger_dagrun
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-08 08:55:03,441] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_trigger_controller_dag, task_id=test_trigger_dagrun, execution_date=20210101T000000, start_date=20250808T085502, end_date=20250808T085503
+[2025-08-08 08:55:03,488] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-08 08:55:03,545] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

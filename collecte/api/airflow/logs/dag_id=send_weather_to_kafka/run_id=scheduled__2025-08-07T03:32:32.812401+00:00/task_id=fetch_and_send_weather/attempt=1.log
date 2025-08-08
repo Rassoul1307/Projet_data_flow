@@ -1,0 +1,28 @@
+[2025-08-07 03:34:34,241] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: send_weather_to_kafka.fetch_and_send_weather scheduled__2025-08-07T03:32:32.812401+00:00 [queued]>
+[2025-08-07 03:34:34,255] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: send_weather_to_kafka.fetch_and_send_weather scheduled__2025-08-07T03:32:32.812401+00:00 [queued]>
+[2025-08-07 03:34:34,255] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:34:34,255] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2025-08-07 03:34:34,255] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:34:34,278] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): fetch_and_send_weather> on 2025-08-07 03:32:32.812401+00:00
+[2025-08-07 03:34:34,285] {standard_task_runner.py:52} INFO - Started process 2980 to run task
+[2025-08-07 03:34:34,290] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'send_weather_to_kafka', 'fetch_and_send_weather', 'scheduled__2025-08-07T03:32:32.812401+00:00', '--job-id', '87', '--raw', '--subdir', 'DAGS_FOLDER/dag_meteo.py', '--cfg-path', '/tmp/tmpnx9hywow', '--error-file', '/tmp/tmp051t8t5q']
+[2025-08-07 03:34:34,292] {standard_task_runner.py:80} INFO - Job 87: Subtask fetch_and_send_weather
+[2025-08-07 03:34:34,424] {task_command.py:369} INFO - Running <TaskInstance: send_weather_to_kafka.fetch_and_send_weather scheduled__2025-08-07T03:32:32.812401+00:00 [running]> on host 47565329e35b
+[2025-08-07 03:34:34,845] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alla
+AIRFLOW_CTX_DAG_ID=send_weather_to_kafka
+AIRFLOW_CTX_TASK_ID=fetch_and_send_weather
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-07T03:32:32.812401+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-07T03:32:32.812401+00:00
+[2025-08-07 03:34:34,848] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-08-07 03:34:34,849] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'cd /opt/***/scripts && python3 kafka/producer.py']
+[2025-08-07 03:34:34,874] {subprocess.py:85} INFO - Output:
+[2025-08-07 03:34:36,897] {subprocess.py:92} INFO - Envoi vers Kafka : {'temperature': 28, 'humidity': 84, 'windSpeed': 3.1, 'cloudCover': 23, 'rainIntensity': 0, 'timestamp': '2025-08-07T03:34:00Z'}
+[2025-08-07 03:34:36,968] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-08-07 03:34:37,026] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=send_weather_to_kafka, task_id=fetch_and_send_weather, execution_date=20250807T033232, start_date=20250807T033434, end_date=20250807T033437
+[2025-08-07 03:34:37,073] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:34:37,132] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

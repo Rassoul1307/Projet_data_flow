@@ -1,0 +1,44 @@
+[2025-08-07 09:22:01,963] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_passing_params_via_test_command.also_run_this scheduled__2025-08-07T09:21:00+00:00 [queued]>
+[2025-08-07 09:22:01,970] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_passing_params_via_test_command.also_run_this scheduled__2025-08-07T09:21:00+00:00 [queued]>
+[2025-08-07 09:22:01,970] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 09:22:01,970] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 09:22:01,970] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 09:22:01,979] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): also_run_this> on 2025-08-07 09:21:00+00:00
+[2025-08-07 09:22:01,986] {standard_task_runner.py:52} INFO - Started process 52894 to run task
+[2025-08-07 09:22:01,990] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_passing_params_via_test_command', 'also_run_this', 'scheduled__2025-08-07T09:21:00+00:00', '--job-id', '621', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_passing_params_via_test_command.py', '--cfg-path', '/tmp/tmpcgm_t3o6', '--error-file', '/tmp/tmp8l3nu99c']
+[2025-08-07 09:22:01,991] {standard_task_runner.py:80} INFO - Job 621: Subtask also_run_this
+[2025-08-07 09:22:02,076] {task_command.py:369} INFO - Running <TaskInstance: example_passing_params_via_test_command.also_run_this scheduled__2025-08-07T09:21:00+00:00 [running]> on host 92a46ac2453f
+[2025-08-07 09:22:02,112] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1451, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1555, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2202, in render_templates
+    rendered_task = self.task.render_template_fields(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 1179, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/abstractoperator.py", line 348, in _do_render_template_fields
+    seen_oids,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/abstractoperator.py", line 404, in render_template
+    return {key: self.render_template(value, context, jinja_env) for key, value in value.items()}
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/abstractoperator.py", line 404, in <dictcomp>
+    return {key: self.render_template(value, context, jinja_env) for key, value in value.items()}
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/abstractoperator.py", line 391, in render_template
+    return render_template_to_string(template, context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 296, in render_template_to_string
+    return render_template(template, context, native=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 291, in render_template
+    return "".join(nodes)
+  File "<template>", line 12, in root
+  File "/home/airflow/.local/lib/python3.7/site-packages/jinja2/runtime.py", line 903, in _fail_with_undefined_error
+    raise self._undefined_exception(self._undefined_message)
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'foo'
+[2025-08-07 09:22:02,122] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=example_passing_params_via_test_command, task_id=also_run_this, execution_date=20250807T092100, start_date=20250807T092201, end_date=20250807T092202
+[2025-08-07 09:22:02,138] {standard_task_runner.py:97} ERROR - Failed to execute job 621 for task also_run_this ('dict object' has no attribute 'foo'; 52894)
+[2025-08-07 09:22:02,160] {local_task_job.py:156} INFO - Task exited with return code 1
+[2025-08-07 09:22:02,212] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

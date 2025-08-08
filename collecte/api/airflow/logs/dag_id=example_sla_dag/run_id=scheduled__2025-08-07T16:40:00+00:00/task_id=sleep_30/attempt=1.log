@@ -1,0 +1,118 @@
+[2025-08-07 16:42:23,251] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_sla_dag.sleep_30 scheduled__2025-08-07T16:40:00+00:00 [queued]>
+[2025-08-07 16:42:23,271] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_sla_dag.sleep_30 scheduled__2025-08-07T16:40:00+00:00 [queued]>
+[2025-08-07 16:42:23,271] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 16:42:23,272] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 16:42:23,272] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 16:42:23,302] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): sleep_30> on 2025-08-07 16:40:00+00:00
+[2025-08-07 16:42:23,311] {standard_task_runner.py:52} INFO - Started process 144200 to run task
+[2025-08-07 16:42:23,317] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_sla_dag', 'sleep_30', 'scheduled__2025-08-07T16:40:00+00:00', '--job-id', '1761', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_sla_dag.py', '--cfg-path', '/tmp/tmpeiuyvuca', '--error-file', '/tmp/tmpt1jp9ibu']
+[2025-08-07 16:42:23,319] {standard_task_runner.py:80} INFO - Job 1761: Subtask sleep_30
+[2025-08-07 16:42:23,432] {task_command.py:369} INFO - Running <TaskInstance: example_sla_dag.sleep_30 scheduled__2025-08-07T16:40:00+00:00 [running]> on host b810b38b6a38
+[2025-08-07 16:42:23,757] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=email@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_sla_dag
+AIRFLOW_CTX_TASK_ID=sleep_30
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-07T16:40:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-07T16:40:00+00:00
+[2025-08-07 16:42:43,254] {local_task_job.py:84} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-08-07 16:42:43,260] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 144200. PIDs of all processes in the group: [144200]
+[2025-08-07 16:42:43,260] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 144200
+[2025-08-07 16:42:43,261] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-08-07 16:42:43,309] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 179, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_sla_dag.py", line 58, in sleep_30
+    time.sleep(30)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2025-08-07 16:42:43,331] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=example_sla_dag, task_id=sleep_30, execution_date=20250807T164000, start_date=20250807T164223, end_date=20250807T164243
+[2025-08-07 16:42:43,456] {logging_mixin.py:115} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/email.py:115 PendingDeprecationWarning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2025-08-07 16:42:43,458] {configuration.py:494} WARNING - section/key [smtp/smtp_user] not found in config
+[2025-08-07 16:42:43,459] {email.py:224} INFO - Email alerting: attempt 1
+[2025-08-07 16:42:43,479] {configuration.py:494} WARNING - section/key [smtp/smtp_user] not found in config
+[2025-08-07 16:42:43,480] {email.py:224} INFO - Email alerting: attempt 1
+[2025-08-07 16:42:43,481] {taskinstance.py:1944} ERROR - Failed to send email to: email@example.com
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1451, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1598, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1659, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 179, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_sla_dag.py", line 58, in sleep_30
+    time.sleep(30)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2316, in email_alert
+    send_email(task.email, subject, html_content)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 71, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 115, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 226, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 260, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.7/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/local/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1942, in handle_failure
+    self.email_alert(error, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2318, in email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 71, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 115, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 226, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 260, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.7/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/local/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-08-07 16:42:43,517] {standard_task_runner.py:97} ERROR - Failed to execute job 1761 for task sleep_30 (Task received SIGTERM signal; 144200)
+[2025-08-07 16:42:43,557] {process_utils.py:75} INFO - Process psutil.Process(pid=144200, status='terminated', exitcode=1, started='16:42:23') (144200) terminated with exit code 1
+[2025-08-07 16:42:43,557] {local_task_job.py:156} INFO - Task exited with return code 143
+[2025-08-07 16:42:43,607] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

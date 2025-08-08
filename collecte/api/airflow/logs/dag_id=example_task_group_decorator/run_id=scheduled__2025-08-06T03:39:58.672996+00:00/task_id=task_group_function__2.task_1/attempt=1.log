@@ -1,0 +1,23 @@
+[2025-08-07 03:40:03,762] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_task_group_decorator.task_group_function__2.task_1 scheduled__2025-08-06T03:39:58.672996+00:00 [queued]>
+[2025-08-07 03:40:03,787] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_task_group_decorator.task_group_function__2.task_1 scheduled__2025-08-06T03:39:58.672996+00:00 [queued]>
+[2025-08-07 03:40:03,787] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:40:03,787] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:40:03,787] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:40:03,825] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): task_group_function__2.task_1> on 2025-08-06 03:39:58.672996+00:00
+[2025-08-07 03:40:03,843] {standard_task_runner.py:52} INFO - Started process 510 to run task
+[2025-08-07 03:40:03,852] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_task_group_decorator', 'task_group_function__2.task_1', 'scheduled__2025-08-06T03:39:58.672996+00:00', '--job-id', '46', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_task_group_decorator.py', '--cfg-path', '/tmp/tmper22eevm', '--error-file', '/tmp/tmp7t4nz4zd']
+[2025-08-07 03:40:03,856] {standard_task_runner.py:80} INFO - Job 46: Subtask task_group_function__2.task_1
+[2025-08-07 03:40:03,984] {task_command.py:369} INFO - Running <TaskInstance: example_task_group_decorator.task_group_function__2.task_1 scheduled__2025-08-06T03:39:58.672996+00:00 [running]> on host 92a46ac2453f
+[2025-08-07 03:40:04,904] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_task_group_decorator
+AIRFLOW_CTX_TASK_ID=task_group_function__2.task_1
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-06T03:39:58.672996+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-06T03:39:58.672996+00:00
+[2025-08-07 03:40:04,906] {python.py:173} INFO - Done. Returned value was: [ Task1 2 ]
+[2025-08-07 03:40:05,114] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_task_group_decorator, task_id=task_group_function__2.task_1, execution_date=20250806T033958, start_date=20250807T034003, end_date=20250807T034005
+[2025-08-07 03:40:05,161] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:40:05,373] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

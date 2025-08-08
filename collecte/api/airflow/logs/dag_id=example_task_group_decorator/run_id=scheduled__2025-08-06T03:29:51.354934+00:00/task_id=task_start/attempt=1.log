@@ -1,0 +1,23 @@
+[2025-08-07 03:29:53,796] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_task_group_decorator.task_start scheduled__2025-08-06T03:29:51.354934+00:00 [queued]>
+[2025-08-07 03:29:53,821] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_task_group_decorator.task_start scheduled__2025-08-06T03:29:51.354934+00:00 [queued]>
+[2025-08-07 03:29:53,821] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:29:53,821] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:29:53,821] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:29:53,862] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): task_start> on 2025-08-06 03:29:51.354934+00:00
+[2025-08-07 03:29:53,881] {standard_task_runner.py:52} INFO - Started process 429 to run task
+[2025-08-07 03:29:53,899] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_task_group_decorator', 'task_start', 'scheduled__2025-08-06T03:29:51.354934+00:00', '--job-id', '25', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_task_group_decorator.py', '--cfg-path', '/tmp/tmpj3b6qa_5', '--error-file', '/tmp/tmp_yx9do5e']
+[2025-08-07 03:29:53,904] {standard_task_runner.py:80} INFO - Job 25: Subtask task_start
+[2025-08-07 03:29:54,412] {task_command.py:369} INFO - Running <TaskInstance: example_task_group_decorator.task_start scheduled__2025-08-06T03:29:51.354934+00:00 [running]> on host 47565329e35b
+[2025-08-07 03:29:55,460] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_task_group_decorator
+AIRFLOW_CTX_TASK_ID=task_start
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-06T03:29:51.354934+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-06T03:29:51.354934+00:00
+[2025-08-07 03:29:55,461] {python.py:173} INFO - Done. Returned value was: [Task_start]
+[2025-08-07 03:29:55,532] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_task_group_decorator, task_id=task_start, execution_date=20250806T032951, start_date=20250807T032953, end_date=20250807T032955
+[2025-08-07 03:29:55,616] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:29:55,745] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check

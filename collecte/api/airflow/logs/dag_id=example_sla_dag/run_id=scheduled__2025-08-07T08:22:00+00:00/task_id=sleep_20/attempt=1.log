@@ -1,0 +1,26 @@
+[2025-08-07 08:24:01,064] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_sla_dag.sleep_20 scheduled__2025-08-07T08:22:00+00:00 [queued]>
+[2025-08-07 08:24:01,075] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_sla_dag.sleep_20 scheduled__2025-08-07T08:22:00+00:00 [queued]>
+[2025-08-07 08:24:01,075] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 08:24:01,075] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 08:24:01,075] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 08:24:01,091] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): sleep_20> on 2025-08-07 08:22:00+00:00
+[2025-08-07 08:24:01,098] {standard_task_runner.py:52} INFO - Started process 23842 to run task
+[2025-08-07 08:24:01,101] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_sla_dag', 'sleep_20', 'scheduled__2025-08-07T08:22:00+00:00', '--job-id', '329', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_sla_dag.py', '--cfg-path', '/tmp/tmpmsr428xb', '--error-file', '/tmp/tmp2c7yru_7']
+[2025-08-07 08:24:01,102] {standard_task_runner.py:80} INFO - Job 329: Subtask sleep_20
+[2025-08-07 08:24:01,169] {task_command.py:369} INFO - Running <TaskInstance: example_sla_dag.sleep_20 scheduled__2025-08-07T08:22:00+00:00 [running]> on host 92a46ac2453f
+[2025-08-07 08:24:01,338] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=email@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_sla_dag
+AIRFLOW_CTX_TASK_ID=sleep_20
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-07T08:22:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-07T08:22:00+00:00
+[2025-08-07 08:24:21,358] {python.py:173} INFO - Done. Returned value was: None
+[2025-08-07 08:24:21,385] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_sla_dag, task_id=sleep_20, execution_date=20250807T082200, start_date=20250807T082401, end_date=20250807T082421
+[2025-08-07 08:24:21,409] {local_task_job.py:221} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2025-08-07 08:24:21,413] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 23842. PIDs of all processes in the group: [23842]
+[2025-08-07 08:24:21,413] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 23842
+[2025-08-07 08:24:21,415] {process_utils.py:75} INFO - Process psutil.Process(pid=23842, status='terminated', exitcode=0, started='08:24:00') (23842) terminated with exit code 0

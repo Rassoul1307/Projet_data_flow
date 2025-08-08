@@ -1,0 +1,210 @@
+[2025-08-07 03:21:11,962] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:21:11,980] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:21:11,980] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:21:11,980] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:21:11,980] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:21:12,009] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): bash_push> on 2021-01-01 00:00:00+00:00
+[2025-08-07 03:21:12,025] {standard_task_runner.py:52} INFO - Started process 328 to run task
+[2025-08-07 03:21:12,041] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'bash_push', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmp6gsygqjm', '--error-file', '/tmp/tmpubnt_ycm']
+[2025-08-07 03:21:12,048] {standard_task_runner.py:80} INFO - Job 12: Subtask bash_push
+[2025-08-07 03:21:12,322] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [running]> on host f83ee74b89ef
+[2025-08-07 03:21:12,962] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=bash_push
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 03:21:12,964] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-08-07 03:21:12,966] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "bash_push demo"  && echo "Manually set xcom value None" && echo "value_by_return"']
+[2025-08-07 03:21:13,014] {subprocess.py:85} INFO - Output:
+[2025-08-07 03:21:13,019] {subprocess.py:92} INFO - bash_push demo
+[2025-08-07 03:21:13,020] {subprocess.py:92} INFO - Manually set xcom value None
+[2025-08-07 03:21:13,022] {subprocess.py:92} INFO - value_by_return
+[2025-08-07 03:21:13,023] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-08-07 03:21:13,226] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_push, execution_date=20210101T000000, start_date=20250807T032111, end_date=20250807T032113
+[2025-08-07 03:21:13,340] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:21:13,483] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 03:29:48,819] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:29:48,842] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:29:48,843] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:29:48,844] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:29:48,844] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:29:48,886] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): bash_push> on 2021-01-01 00:00:00+00:00
+[2025-08-07 03:29:48,907] {standard_task_runner.py:52} INFO - Started process 327 to run task
+[2025-08-07 03:29:48,924] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'bash_push', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '11', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpvywfru05', '--error-file', '/tmp/tmpu51k4ild']
+[2025-08-07 03:29:48,927] {standard_task_runner.py:80} INFO - Job 11: Subtask bash_push
+[2025-08-07 03:29:49,084] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [running]> on host 47565329e35b
+[2025-08-07 03:29:49,899] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=bash_push
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 03:29:49,900] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-08-07 03:29:49,901] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "bash_push demo"  && echo "Manually set xcom value None" && echo "value_by_return"']
+[2025-08-07 03:29:49,973] {subprocess.py:85} INFO - Output:
+[2025-08-07 03:29:49,979] {subprocess.py:92} INFO - bash_push demo
+[2025-08-07 03:29:49,980] {subprocess.py:92} INFO - Manually set xcom value None
+[2025-08-07 03:29:49,980] {subprocess.py:92} INFO - value_by_return
+[2025-08-07 03:29:49,982] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-08-07 03:29:50,255] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_push, execution_date=20210101T000000, start_date=20250807T032948, end_date=20250807T032950
+[2025-08-07 03:29:50,328] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:29:50,453] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 03:39:56,998] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:39:57,014] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 03:39:57,015] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:39:57,015] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 03:39:57,016] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 03:39:57,078] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): bash_push> on 2021-01-01 00:00:00+00:00
+[2025-08-07 03:39:57,095] {standard_task_runner.py:52} INFO - Started process 321 to run task
+[2025-08-07 03:39:57,104] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'bash_push', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmprwmgxe9c', '--error-file', '/tmp/tmprpx0hyoq']
+[2025-08-07 03:39:57,109] {standard_task_runner.py:80} INFO - Job 9: Subtask bash_push
+[2025-08-07 03:39:57,281] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [running]> on host 92a46ac2453f
+[2025-08-07 03:39:57,784] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=bash_push
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 03:39:57,788] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-08-07 03:39:57,789] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "bash_push demo"  && echo "Manually set xcom value None" && echo "value_by_return"']
+[2025-08-07 03:39:57,878] {subprocess.py:85} INFO - Output:
+[2025-08-07 03:39:57,892] {subprocess.py:92} INFO - bash_push demo
+[2025-08-07 03:39:57,893] {subprocess.py:92} INFO - Manually set xcom value None
+[2025-08-07 03:39:57,894] {subprocess.py:92} INFO - value_by_return
+[2025-08-07 03:39:57,895] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-08-07 03:39:58,042] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_push, execution_date=20210101T000000, start_date=20250807T033956, end_date=20250807T033958
+[2025-08-07 03:39:58,141] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 03:39:58,436] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 10:40:18,494] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 10:40:18,521] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 10:40:18,521] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 10:40:18,522] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 10:40:18,522] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 10:40:18,562] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): bash_push> on 2021-01-01 00:00:00+00:00
+[2025-08-07 10:40:18,584] {standard_task_runner.py:52} INFO - Started process 307 to run task
+[2025-08-07 10:40:18,589] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'bash_push', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpjdyxltfu', '--error-file', '/tmp/tmpobfw3i35']
+[2025-08-07 10:40:18,590] {standard_task_runner.py:80} INFO - Job 6: Subtask bash_push
+[2025-08-07 10:40:18,736] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [running]> on host 81d3b97a0728
+[2025-08-07 10:40:19,267] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=bash_push
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 10:40:19,268] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-08-07 10:40:19,269] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "bash_push demo"  && echo "Manually set xcom value None" && echo "value_by_return"']
+[2025-08-07 10:40:19,306] {subprocess.py:85} INFO - Output:
+[2025-08-07 10:40:19,315] {subprocess.py:92} INFO - bash_push demo
+[2025-08-07 10:40:19,315] {subprocess.py:92} INFO - Manually set xcom value None
+[2025-08-07 10:40:19,315] {subprocess.py:92} INFO - value_by_return
+[2025-08-07 10:40:19,316] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-08-07 10:40:19,426] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_push, execution_date=20210101T000000, start_date=20250807T104018, end_date=20250807T104019
+[2025-08-07 10:40:19,535] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 10:40:19,838] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 11:11:44,698] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 11:11:44,809] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 11:11:44,810] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 11:11:44,810] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 11:11:44,810] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 11:11:44,898] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): bash_push> on 2021-01-01 00:00:00+00:00
+[2025-08-07 11:11:44,919] {standard_task_runner.py:52} INFO - Started process 320 to run task
+[2025-08-07 11:11:44,966] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'bash_push', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpcgkc8hlk', '--error-file', '/tmp/tmpfycylqa3']
+[2025-08-07 11:11:44,974] {standard_task_runner.py:80} INFO - Job 12: Subtask bash_push
+[2025-08-07 11:11:45,330] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [running]> on host b22dcc1493a4
+[2025-08-07 11:11:46,580] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=bash_push
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 11:11:46,595] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-08-07 11:11:46,596] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "bash_push demo"  && echo "Manually set xcom value None" && echo "value_by_return"']
+[2025-08-07 11:11:46,671] {subprocess.py:85} INFO - Output:
+[2025-08-07 11:11:46,674] {subprocess.py:92} INFO - bash_push demo
+[2025-08-07 11:11:46,675] {subprocess.py:92} INFO - Manually set xcom value None
+[2025-08-07 11:11:46,675] {subprocess.py:92} INFO - value_by_return
+[2025-08-07 11:11:46,676] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-08-07 11:11:46,734] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_push, execution_date=20210101T000000, start_date=20250807T111144, end_date=20250807T111146
+[2025-08-07 11:11:46,809] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 11:11:46,901] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-08-07 20:33:08,622] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 20:33:08,639] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-07 20:33:08,640] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 20:33:08,640] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-07 20:33:08,641] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-07 20:33:08,670] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): bash_push> on 2021-01-01 00:00:00+00:00
+[2025-08-07 20:33:08,683] {standard_task_runner.py:52} INFO - Started process 303 to run task
+[2025-08-07 20:33:08,689] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'bash_push', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpdjr5rpay', '--error-file', '/tmp/tmp8y6iuksj']
+[2025-08-07 20:33:08,691] {standard_task_runner.py:80} INFO - Job 8: Subtask bash_push
+[2025-08-07 20:33:08,812] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [running]> on host 034e74559af0
+[2025-08-07 20:33:11,018] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=bash_push
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-07 20:33:11,456] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-08-07 20:33:11,565] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "bash_push demo"  && echo "Manually set xcom value None" && echo "value_by_return"']
+[2025-08-07 20:33:19,736] {subprocess.py:85} INFO - Output:
+[2025-08-07 20:33:31,586] {subprocess.py:92} INFO - bash_push demo
+[2025-08-07 20:33:32,016] {subprocess.py:92} INFO - Manually set xcom value None
+[2025-08-07 20:33:32,016] {subprocess.py:92} INFO - value_by_return
+[2025-08-07 20:33:32,017] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-08-07 20:33:36,768] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_push, execution_date=20210101T000000, start_date=20250807T203308, end_date=20250807T203336
+[2025-08-07 20:33:37,029] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-07 20:33:37,468] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-08 08:55:05,438] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-08 08:55:05,482] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2025-08-08 08:55:05,483] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:55:05,484] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-08 08:55:05,484] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:55:05,629] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): bash_push> on 2021-01-01 00:00:00+00:00
+[2025-08-08 08:55:05,683] {standard_task_runner.py:52} INFO - Started process 324 to run task
+[2025-08-08 08:55:05,687] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'bash_push', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '11', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpziz91par', '--error-file', '/tmp/tmplb8opo_m']
+[2025-08-08 08:55:05,688] {standard_task_runner.py:80} INFO - Job 11: Subtask bash_push
+[2025-08-08 08:55:05,857] {task_command.py:369} INFO - Running <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [running]> on host abdeb7f02efc
+[2025-08-08 08:55:06,624] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=bash_push
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2025-08-08 08:55:06,625] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2025-08-08 08:55:06,626] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "bash_push demo"  && echo "Manually set xcom value None" && echo "value_by_return"']
+[2025-08-08 08:55:06,666] {subprocess.py:85} INFO - Output:
+[2025-08-08 08:55:06,676] {subprocess.py:92} INFO - bash_push demo
+[2025-08-08 08:55:06,677] {subprocess.py:92} INFO - Manually set xcom value None
+[2025-08-08 08:55:06,678] {subprocess.py:92} INFO - value_by_return
+[2025-08-08 08:55:06,678] {subprocess.py:96} INFO - Command exited with return code 0
+[2025-08-08 08:55:06,880] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_push, execution_date=20210101T000000, start_date=20250808T085505, end_date=20250808T085506
+[2025-08-08 08:55:07,005] {local_task_job.py:156} INFO - Task exited with return code 0
+[2025-08-08 08:55:07,093] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check

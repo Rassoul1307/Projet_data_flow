@@ -1,0 +1,30 @@
+[2025-08-08 08:42:22,111] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_sla_dag.sleep_30 scheduled__2025-08-08T08:40:00+00:00 [queued]>
+[2025-08-08 08:42:22,122] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_sla_dag.sleep_30 scheduled__2025-08-08T08:40:00+00:00 [queued]>
+[2025-08-08 08:42:22,122] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:42:22,122] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2025-08-08 08:42:22,122] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2025-08-08 08:42:22,139] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): sleep_30> on 2025-08-08 08:40:00+00:00
+[2025-08-08 08:42:22,145] {standard_task_runner.py:52} INFO - Started process 13160 to run task
+[2025-08-08 08:42:22,149] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_sla_dag', 'sleep_30', 'scheduled__2025-08-08T08:40:00+00:00', '--job-id', '768', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_sla_dag.py', '--cfg-path', '/tmp/tmpeg0_tjnj', '--error-file', '/tmp/tmpowmp51hq']
+[2025-08-08 08:42:22,150] {standard_task_runner.py:80} INFO - Job 768: Subtask sleep_30
+[2025-08-08 08:42:22,222] {task_command.py:369} INFO - Running <TaskInstance: example_sla_dag.sleep_30 scheduled__2025-08-08T08:40:00+00:00 [running]> on host 98bad2c91b1f
+[2025-08-08 08:42:22,443] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=email@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_sla_dag
+AIRFLOW_CTX_TASK_ID=sleep_30
+AIRFLOW_CTX_EXECUTION_DATE=2025-08-08T08:40:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-08-08T08:40:00+00:00
+[2025-08-08 08:42:31,202] {local_task_job.py:84} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-08-08 08:42:31,244] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 13160. PIDs of all processes in the group: [13160]
+[2025-08-08 08:42:31,245] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 13160
+[2025-08-08 08:42:31,247] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-08-08 08:42:31,662] {standard_task_runner.py:97} ERROR - Failed to execute job 768 for task sleep_30 ((psycopg2.OperationalError) connection to server at "airflow-postgres" (172.18.0.6), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: http://sqlalche.me/e/14/e3q8); 13160)
+[2025-08-08 08:42:31,732] {process_utils.py:75} INFO - Process psutil.Process(pid=13160, status='terminated', exitcode=1, started='08:42:22') (13160) terminated with exit code 1
+[2025-08-08 08:42:31,738] {local_task_job.py:156} INFO - Task exited with return code 143
