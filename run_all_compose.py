@@ -5,7 +5,7 @@ import subprocess
 racine = os.getcwd()  # ou remplace par un chemin absolu, ex : "/home/user/projects"
 
 # Noms possibles des fichiers docker-compose
-fichiers_compose = ["docker-compose.yml", "docker-compose.yaml"]
+fichiers_compose = ["docker-compose.yaml"]
 
 def lancer_docker_compose(chemin):
     print(f"\n➡️  Dossier : {chemin}")
