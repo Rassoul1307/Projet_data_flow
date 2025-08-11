@@ -1,0 +1,11 @@
+services:
+  spark:
+    build:
+      context: .
+    container_name: pyspark
+    networks:
+      - data-lake-network
+
+networks:
+  data-lake-network:
+    external: true
