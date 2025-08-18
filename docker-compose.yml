@@ -125,13 +125,13 @@ services:
       timeout: 10s
       retries: 5
 
-  # Service d'initialisation pour Airflow
+  #initialisation d'Airflow
   airflow-init:
     build:
       context: .
       dockerfile: Dockerfile
     image: custom_airflow:latest
-    user: "0:0"  # Root pour initialisation
+    user: "0:0"  
     depends_on:
       postgres:
         condition: service_healthy
@@ -145,7 +145,7 @@ services:
       _AIRFLOW_WWW_USER_CREATE: 'true'
       _AIRFLOW_WWW_USER_USERNAME: admin
       _AIRFLOW_WWW_USER_PASSWORD: admin
-      # Variables pour votre pipeline
+      # Variables pour le pipeline
       KAFKA_BROKER_URL: kafka:9092
       REDIS_HOST: my_redis
       REDIS_PORT: 6379
@@ -182,13 +182,17 @@ services:
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "False"
-      # Variables pour votre pipeline
+      # Variables pour le pipeline
       KAFKA_BROKER_URL: kafka:9092
       REDIS_HOST: my_redis
       REDIS_PORT: 6379
       ELASTICSEARCH_HOST: elasticsearch
       ELASTICSEARCH_PORT: 9200
       TOMORROW_API_KEY: ${TOMORROW_API_KEY}
+      #Spark
+      JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+      SPARK_HOME: /opt/spark-3.3.1-bin-hadoop3
+      HADOOP_CONF_DIR: /opt/hadoop/etc/hadoop
     volumes:
       - ./collecte/api/airflow/dags:/opt/airflow/dags
       - ./collecte/api/airflow/logs:/opt/airflow/logs
@@ -222,7 +226,6 @@ services:
       AIRFLOW__CORE__FERNET_KEY: "Za58RK8KkukKWLZ3Mp7_UVwWWF7wLY2vPrspSq7VtMc="
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "False"
-      
       # Variables pour votre pipeline
       KAFKA_BROKER_URL: kafka:9092
       REDIS_HOST: my_redis
@@ -230,6 +233,10 @@ services:
       ELASTICSEARCH_HOST: elasticsearch
       ELASTICSEARCH_PORT: 9200
       TOMORROW_API_KEY: ${TOMORROW_API_KEY}
+      #Spark
+      JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+      SPARK_HOME: /opt/spark-3.3.1-bin-hadoop3
+      HADOOP_CONF_DIR: /opt/hadoop/etc/hadoop
     volumes:
       - ./collecte/api/airflow/dags:/opt/airflow/dags
       - ./collecte/api/airflow/logs:/opt/airflow/logs
@@ -239,6 +246,153 @@ services:
     networks:
       - elk
     restart: unless-stopped
+
+  # ============== HADOOP CLUSTER ==============
+  namenode:
+    image: apache/hadoop:3
+    container_name: namenode
+    hostname: namenode
+    command: ["hdfs", "namenode"]
+    networks:
+      - elk
+    ports:
+      - "9870:9870"
+      - "9000:9000"
+    env_file:
+      - ./config
+    environment:
+      - ENSURE_NAMENODE_DIR=/hadoop/dfs/name
+      - HADOOP_HOME=/opt/hadoop
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+    healthcheck:
+      test: ["CMD-SHELL", "hdfs dfsadmin -report || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+
+  datanode:
+    image: apache/hadoop:3
+    container_name: datanode
+    command: ["hdfs", "datanode"]
+    networks:
+      - elk
+    ports:
+      - "9864:9864"
+    env_file:
+      - ./config
+    environment:
+      - HADOOP_HOME=/opt/hadoop
+    volumes:
+      - hadoop_datanode:/hadoop/dfs/data
+    depends_on:
+      namenode:
+        condition: service_healthy
+
+  resourcemanager:
+    image: apache/hadoop:3
+    container_name: resourcemanager
+    hostname: resourcemanager
+    command: ["yarn", "resourcemanager"]
+    networks:
+      - elk
+    ports:
+      - "8088:8088"
+      - "8032:8032"
+    env_file:
+      - ./config
+    environment:
+      - HADOOP_HOME=/opt/hadoop
+    depends_on:
+      namenode:
+        condition: service_healthy
+
+  nodemanager:
+    image: apache/hadoop:3
+    container_name: nodemanager
+    command: ["yarn", "nodemanager"]
+    networks:
+      - elk
+    ports:
+      - "8042:8042"
+    env_file:
+      - ./config
+    environment:
+      - HADOOP_HOME=/opt/hadoop
+    volumes:
+      - hadoop_nodemanager_local:/hadoop/yarn/local
+      - hadoop_nodemanager_logs:/hadoop/yarn/logs
+    depends_on:
+      - namenode
+      - resourcemanager
+
+  historyserver:
+    image: apache/hadoop:3
+    container_name: historyserver
+    command: ["mapred", "historyserver"]
+    networks:
+      - elk
+    ports:
+      - "8188:8188"
+      - "19888:19888"
+    env_file:
+      - ./config
+    environment:
+      - HADOOP_HOME=/opt/hadoop
+    depends_on:
+      namenode:
+        condition: service_healthy
+
+  # ============== PYSPARK ==============
+  pyspark:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pyspark
+    networks:
+      - elk
+    ports:
+      - "4040:4040"  # Spark UI
+    env_file:
+      - ./config
+    environment:
+      - SPARK_HOME=/opt/spark
+      - HADOOP_HOME=/opt/hadoop
+      - HADOOP_USER_NAME=root
+      - JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+      # Configuration pour les services externes
+      - KAFKA_BROKERS=kafka:9092
+    
+    volumes:
+      - ./collecte/api/pyspark:/opt/pyspark
+      - ./collecte/api/pyspark:/app
+      - ./collecte/api/kafka:/opt/kafka
+    depends_on:
+      namenode:
+        condition: service_healthy
+      datanode:
+        condition: service_started
+      resourcemanager:
+        condition: service_started
+      nodemanager:
+        condition: service_started
+      kafka:
+        condition: service_healthy
+    command: >
+      bash -c "
+      echo 'Attente initialisation Hadoop...' &&
+      sleep 30 &&
+      echo 'Création répertoires HDFS si nécessaire...' &&
+      hdfs dfs -mkdir -p /tmp &&
+      hdfs dfs -mkdir -p /user &&
+      hdfs dfs -mkdir -p /weather &&
+      hdfs dfs -chmod 777 /tmp &&
+      hdfs dfs -chmod 777 /user &&
+      hdfs dfs -chmod 777 /weather &&
+      echo 'Conteneur PySpark prêt - en attente des jobs Spark' &&
+      tail -f /dev/null
+      "
 
 networks:
   elk:
@@ -250,4 +404,12 @@ volumes:
   redis_data:
     driver: local
   postgres_data:
+    driver: local
+  hadoop_namenode:
+    driver: local
+  hadoop_datanode:
+    driver: local
+  hadoop_nodemanager_local:
+    driver: local
+  hadoop_nodemanager_logs:
     driver: local

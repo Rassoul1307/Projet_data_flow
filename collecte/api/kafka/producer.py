@@ -5,7 +5,7 @@ from kafka import KafkaProducer
 # CONFIGURATION
 TOMORROW_API_KEY = "OC9yH405dZFT1BOO6w6nPgDanrhpPwV8"
 LAT, LON = 14.6937, -17.4441  
-KAFKA_BROKER = 'kafka:9092'  # ← SEUL CHANGEMENT : kafka au lieu de 127.0.0.1
+KAFKA_BROKER = 'kafka:9092'  
 TOPIC_NAME = 'weather_dakar'
 
 # On initialise le PRODUCER
