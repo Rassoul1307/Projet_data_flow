@@ -1,0 +1,57 @@
+services:
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: namenode
+    environment:
+      - CLUSTER_NAME=hadoop_cluster
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:8020
+      - HDFS_CONF_dfs_namenode_rpc-address=namenode:8020
+    ports:
+      - "9870:9870"   # UI web du namenode
+      - "8020:8020"   # RPC HDFS
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+    networks:
+      - hadoopnet
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "8020"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode
+    environment:
+      - CLUSTER_NAME=hadoop_cluster
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:8020
+    ports:
+      - "9864:9864"
+    volumes:
+      - hadoop_datanode:/hadoop/dfs/data
+    networks:
+      - hadoopnet
+    depends_on:
+      namenode:
+        condition: service_healthy
+
+  spark:
+    build:
+      context: .
+    container_name: spark
+    networks:
+      - hadoopnet
+    depends_on:
+      namenode:
+        condition: service_healthy
+      datanode:
+        condition: service_started
+
+networks:
+  hadoopnet:
+    external: true
+
+volumes:
+  hadoop_namenode:
+  hadoop_datanode:

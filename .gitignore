@@ -1,3 +1,30 @@
-# 🐍 Environnement virtuel
+# Environnement virtuel
 env/
 .venv/
+__pycache__/
+*.pyc
+
+# Fichiers de config d'IDE
+.vscode/
+.idea/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Données sensibles ou temporaires
+*.env
+*.log
+
+# # Fichiers CSV volumineux ou temporaires
+# *.csv
+
+# Docker
+*.pid
+*.sock
+
+# Dossier build (si tu construis avec dist/)
+build/
+dist/
+*.egg-info/
+

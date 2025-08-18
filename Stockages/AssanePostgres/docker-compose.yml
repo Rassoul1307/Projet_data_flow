@@ -10,6 +10,8 @@ services:
       POSTGRES_DB: meteo_dakar
     ports:
       - "5433:5432"  # ← Change ici : ton hôte écoute sur 5433, le conteneur reste en 5432
+    networks:
+      - hadoopnet   # rattachement au réseau commun
     volumes:
       - db_data:/var/lib/postgresql/data
 
@@ -22,3 +24,7 @@ services:
 
 volumes:
   db_data:
+networks:
+  hadoopnet:
+    external: true   # on dit que le réseau existe déjà (créé à l'étape 1)
+
