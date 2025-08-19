@@ -309,3 +309,22 @@ Traceback (most recent call last):
 sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
 
 (Background on this error at: http://sqlalche.me/e/14/e3q8)
+[2025-08-18 13:22:45,160] {local_task_job.py:221} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2025-08-18 13:22:45,255] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 2063. PIDs of all processes in the group: [2064, 2113, 2063]
+[2025-08-18 13:22:45,333] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 2063
+[2025-08-18 13:22:45,383] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-08-18 13:22:45,449] {subprocess.py:103} INFO - Sending SIGTERM signal to process group
+[2025-08-18 13:22:45,767] {process_utils.py:75} INFO - Process psutil.Process(pid=2113, status='terminated', started='10:57:36') (2113) terminated with exit code None
+[2025-08-18 13:22:46,279] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 189, in execute
+    cwd=self.cwd,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/subprocess.py", line 90, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b''):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2025-08-18 13:22:46,489] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=send_weather_to_kafka, task_id=stream_hdfs, execution_date=20250818T105653, start_date=20250818T105733, end_date=20250818T132246
+[2025-08-18 13:22:46,839] {standard_task_runner.py:97} ERROR - Failed to execute job 276 for task stream_hdfs (Task received SIGTERM signal; 2063)
+[2025-08-18 13:22:47,280] {process_utils.py:75} INFO - Process psutil.Process(pid=2063, status='terminated', exitcode=1, started='10:57:32') (2063) terminated with exit code 1
+[2025-08-18 13:22:48,286] {process_utils.py:75} INFO - Process psutil.Process(pid=2064, status='terminated', started='10:57:33') (2064) terminated with exit code None
